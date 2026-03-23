@@ -327,6 +327,11 @@ body {
         margin-top: 15px;
     }
 
+        .article__heading {
+        padding-top: 10.1875rem;
+        padding-bottom: 5.49rem;
+    }
+
     .results-container {
       max-width: 25.8125rem; 
       padding: 3.5rem 2.5rem 2.2rem;
