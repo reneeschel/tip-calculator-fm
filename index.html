@@ -15,7 +15,7 @@
 
 <main>
   <article class="article-content" id="article">
-    <h1 class="article__heading"><img alt="SPLITTER Logo" src="/images/logo.svg"></h1>
+    <h1 class="article__heading" aria-label="SPLITTER"><img alt="SPLITTER Logo" src="/images/logo.svg"><span class="visually-hidden">SPLITTER</span></h1>
 
    <div class="container">
     <section class="content-container">
@@ -26,11 +26,11 @@
     <label for="tip">Select Tip %</label>
 
     <div class="tip-btns">
-      <button class="btn five" data-tip="5">5%</button>
-      <button class="btn ten" data-tip="10">10%</button>
-      <button class="btn fifteen" data-tip="15">15%</button>
-      <button class="btn twentyfive" data-tip=25">25%</button>
-      <button class="btn fifty" data-tip="50">50%</button>
+      <button class="btn five" type="button" data-tip="5">5%</button>
+      <button class="btn ten" type="button" data-tip="10">10%</button>
+      <button class="btn fifteen" type="button" data-tip="15">15%</button>
+      <button class="btn twentyfive" type="button" data-tip=25">25%</button>
+      <button class="btn fifty" type="button" data-tip="50">50%</button>
       <input class="custom" type="number" aria-label="Custom tip percentage" data-tip="btn-custom" id="custom" placeholder="Custom">
     </div>
 
@@ -46,7 +46,7 @@
       <div class="total-results">
         <p>Total<br> <span class="total-per-person">/ person</span></p> <p><span class="total-result" id="total-result">$0.00</span></p>
     </div>
-      <button class="reset" id="reset">RESET</button>
+      <button class="reset" type="reset" reset">RESET</button>
    </section>
 
    </div>
