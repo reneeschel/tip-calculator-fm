@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<main>
+  <article class="article-content" id="article">
+    <h1 class="article__heading"><img alt="SPLITTER Logo" src="/images/logo.svg"></h1>
+
+   <div class="container">
+    <section class="content-container">
+
+    <label for="bill">Bill</label>
+    <input class="bill-input" id="bill-input" name="bill" type="number" placeholder="0" />
+
+    <label for="tip">Select Tip %</label>
+
+    <div class="tip-btns">
+      <button class="btn five" data-tip="5">5%</button>
+      <button class="btn ten" data-tip="10">10%</button>
+      <button class="btn fifteen" data-tip="15">15%</button>
+      <button class="btn twentyfive" data-tip=25">25%</button>
+      <button class="btn fifty" data-tip="50">50%</button>
+      <input class="custom" type="number" aria-label="Custom tip percentage" data-tip="btn-custom" id="custom" placeholder="Custom">
+    </div>
+
+    <label for="people">Number of People</label>
+    <input class="people" type="number" id="people" placeholder="0" />
+  </section>
+
+
+    <section class="results-container">
+    <div class="tip-results">
+      <p>Tip Amount<br><span class="per-person">/ person</span></p><p><span class="tip-result" id="tip-result">$0.00</span></p>
+    </div>
+      <div class="total-results">
+        <p>Total<br> <span class="total-per-person">/ person</span></p> <p><span class="total-result" id="total-result">$0.00</span></p>
+    </div>
+      <button class="reset" id="reset">RESET</button>
+   </section>
+
+   </div>
+
+  </article>
+</main>
+  
+</body>
+</html>
